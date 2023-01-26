@@ -1,0 +1,165 @@
+# Type Parameters (Generics)
+
+## Проблема
+
+.code print_slice.go /START1 OMIT/,/END1 OMIT/
+
+## Проблема
+
+.code print_slice.go /START2 OMIT/,/END2 OMIT/
+
+## Решение
+
+.code print_slice.go /START3 OMIT/,/END3 OMIT/
+
+## Решение
+
+Новое зарезервированное слово **any**  
+(_пока что_ можно использовать только в Type Parameters)  
+`any := interface{}`
+
+.code print_slice.go /START4 OMIT/,/END4 OMIT/
+
+## Решение
+
+.play print_slice.go /START5 OMIT/,/END5 OMIT/
+
+## Синтаксис
+
+.code syntax.go /START OMIT/,/END OMIT/
+
+`Constraint` это просто `interface`, но не совсем...
+
+## Constraint
+
+.image method-sets.png _ 900
+
+## Constraint
+
+.image type-sets.png _ 900
+
+## Constraint
+
+.image type-sets-2.png _ 900
+
+## Min
+
+.code min.go /START1 OMIT/,/END1 OMIT/
+
+## Min
+
+.code min.go /START1.5 OMIT/,/END1.5 OMIT/
+
+## Min
+
+.code min.go /START2 OMIT/,/END2 OMIT/
+
+## Min
+
+.code min.go /START3 OMIT/,/END3 OMIT/
+
+## Min
+
+.code min.go /START4 OMIT/,/END4 OMIT/
+
+## Min
+
+.code min.go /START5 OMIT/,/END5 OMIT/
+
+## Constraints
+
+.code min.go /START6 OMIT/,/END6 OMIT/
+
+## Constraints
+
+Еще одно зарезервированное слово `comparable` (определены `==` и `!=`)
+
+.code min.go /START7 OMIT/,/END7 OMIT/
+
+## Упрощение синтаксиса
+
+.code syntax-2.go /START1 OMIT/,/END1 OMIT/
+
+## Упрощение синтаксиса
+
+.code syntax-2.go /START2 OMIT/,/END2 OMIT/
+
+## Упрощение синтаксиса
+
+.code syntax-2.go /START3 OMIT/,/END3 OMIT/
+
+## Interface
+
+`Interface` тоже может иметь Type Parameters
+
+.code syntax-2.go /START4 OMIT/,/END4 OMIT/
+
+## Struct
+
+И структуры :)
+
+.code sort.go /STARTSLICE OMIT/,/ENDSLICE OMIT/
+
+## Struct
+
+.code sort.go /STARTSORT1 OMIT/,/ENDSORT1 OMIT/
+
+## Struct
+
+.code sort.go /STARTSORT2 OMIT/,/ENDSORT2 OMIT/
+
+## Method
+
+А вот для методов _на данный момент_ **нельзя** добавить Type Parameters :(
+
+.code method.go /START OMIT/,/END OMIT/
+
+## Substitution
+
+.code substitution.go /START OMIT/,/END OMIT/
+
+## Пример
+
+.code scale.go /START1 OMIT/,/END1 OMIT/
+.code scale.go /STARTVEC OMIT/,/ENDVEC OMIT/
+.code scale.go /START1EXAMPLE OMIT/,/END1EXAMPLE OMIT/
+
+## Пример
+
+.code scale.go /START2 OMIT/,/END2 OMIT/
+.code scale.go /STARTVEC OMIT/,/ENDVEC OMIT/
+.code scale.go /START2EXAMPLE OMIT/,/END2EXAMPLE OMIT/
+
+## Интересный пример
+
+.code graph.go /START_INT OMIT/,/END_INT OMIT/
+
+## Интересный пример
+
+.code graph.go /START_INT_IMPL OMIT/,/END_INT_IMPL OMIT/
+
+## Интересный пример
+
+.code graph.go /START_INT_EXAMPLE OMIT/,/END_INT_EXAMPLE OMIT/
+
+## Интересный пример
+
+.code graph.go /START_TP OMIT/,/END_TP OMIT/
+
+## Интересный пример
+
+.code graph.go /START_TP_IMPL OMIT/,/END_TP_IMPL OMIT/
+
+## Интересный пример
+
+.code graph.go /START_TP_EXAMPLE OMIT/,/END_TP_EXAMPLE OMIT/
+
+## Ссылки
+
+- [An Introduction To Generics](https://go.dev/blog/intro-generics)
+- [GopherCon 2021: Robert Griesemer & Ian Lance Taylor - Generics!](https://www.youtube.com/watch?v=Pa_e9EeCdy8)
+- [Type Parameters proposal](https://go.googlesource.com/proposal/+/HEAD/design/43651-type-parameters.md)
+
+- []
+
+.image https://storage.googleapis.com/deleplace-sandbox/2019/go-gcf/gopher-dance-long-3x-sign.gif
