@@ -1,4 +1,4 @@
-# golang-generics
+# slides
 
 Запустить презентацию локально можно с помощью [present](https://godoc.org/golang.org/x/tools/present) tool. Чтобы установить:
 
