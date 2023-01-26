@@ -160,6 +160,7 @@
 - [GopherCon 2021: Robert Griesemer & Ian Lance Taylor - Generics!](https://www.youtube.com/watch?v=Pa_e9EeCdy8)
 - [Type Parameters proposal](https://go.googlesource.com/proposal/+/HEAD/design/43651-type-parameters.md)
 
-- []
+- [Эта презентация](https://go-talks.appspot.com/github.com/maxkuzn/golang-generics/generics.slide)
+- [Репозиторий с кодом](https://github.com/maxkuzn/golang-generics)
 
-.image https://storage.googleapis.com/deleplace-sandbox/2019/go-gcf/gopher-dance-long-3x-sign.gif
+.image gopher-dance.gif
